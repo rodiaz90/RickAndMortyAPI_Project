@@ -1,0 +1,57 @@
+/* Estilos generales */
+body {
+    min-height: 100vh;
+    background-color: aqua;
+    background-image: url('fondo.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+        align-items: center; 
+    }
+
+#characters > div {
+    margin: 10px;
+    text-align: center; 
+}
+
+.imagen {
+    border-radius: 10px;
+    max-width: 100%; 
+}
+
+h4 {
+    color: aliceblue;
+    font: arial;
+    font-size: medium;
+}
+
+.contenedor {
+    width: 420px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #ffff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+
+@media (max-width: 767px) {
+    #characters > div {
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+
+    .contenedor {
+        width: 90%; 
+        margin: 0 auto; 
+    }
+}
